@@ -1,10 +1,10 @@
 :root {
-  --primary-light-color: #99dce2;
-  --primary-color: #5bc7ca;
-  --primary-dark-color: #36bbc0;
+  --primary-light-color: #fffd6d;
+  --primary-color: #fffd44;
+  --primary-dark-color: #f6f312;
 
-  --secondary-light-color: #f587c9;
-  --secondary-color: #f53dac;
+  --secondary-light-color: ##4477ad;
+  --secondary-color: #29639f;
   --secondary-dark-color: #f50c99;
 
   --dark-light-color: #464545;
@@ -15,8 +15,8 @@
   --danger-color: #ef2222;
   --success-color: #57d74c;
 
-  font-family: "IBM Plex Sans", sans-serif;
-  font-family: "IBM Plex Serif", serif;
+  font-family: "Open Sans", sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 html {
   height: 100%;
@@ -35,7 +35,7 @@ body {
 }
 h2 {
   margin: 0;
-  font-family: IBM Plex Sans;
+  font-family: Poppins;
   font-style: normal;
   font-weight: 600;
   font-size: 67px;
@@ -44,7 +44,7 @@ h2 {
 
 h3 {
   margin: 0;
-  font-family: IBM Plex Sans;
+  font-family: Poppins;
   font-style: normal;
   font-weight: 600;
   font-size: 50px;
@@ -53,7 +53,7 @@ h3 {
 
 h4 {
   margin: 0;
-  font-family: IBM Plex Sans;
+  font-family: Poppins;
   font-style: normal;
   font-weight: 600;
   font-size: 37px;
@@ -62,7 +62,7 @@ h4 {
 
 h5 {
   margin: 0;
-  font-family: IBM Plex Sans;
+  font-family: Poppins;
   font-style: normal;
   font-weight: normal;
   font-size: 28px;
@@ -71,7 +71,7 @@ h5 {
 
 h6 {
   margin: 0;
-  font-family: IBM Plex Sans;
+  font-family: Poppins;
   font-style: normal;
   font-weight: normal;
   font-size: 21px;
@@ -80,7 +80,7 @@ h6 {
 
 p {
   margin: 0;
-  font-family: IBM Plex Serif;
+  font-family: Open Sans;
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
@@ -88,7 +88,7 @@ p {
 }
 
 small {
-  font-family: IBM Plex Serif;
+  font-family: Open Sans;
   font-style: normal;
   font-weight: 600;
   font-size: 12px;
