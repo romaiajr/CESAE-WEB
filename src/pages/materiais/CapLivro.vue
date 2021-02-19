@@ -205,7 +205,7 @@ export default {
   padding: 8px 8px 0 8px;
 } */
 #sidebar .active {
-  border: 1px solid var(--primary-dark-color) !important;
+  border: 1px solid var(--secondary-dark-color) !important;
 
   color: white !important;
 

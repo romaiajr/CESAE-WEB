@@ -173,11 +173,11 @@ export default {
 
 .table-striped > tbody > tr:nth-child(2n + 1) > td,
 .table-striped > tbody > tr:nth-child(2n + 1) > th {
-  background-color: #ffd9f0;
-  border-color: #ffd9f0;
+  background-color: var(--primary-light-color);
+  border-color: var(--primary-light-color);
 }
 .table-striped > tbody > tr:hover {
-  background-color: #ffd9f0;
+  background-color: var(--primary-light-color);
 }
 #table-section {
   padding: 0px;
@@ -190,7 +190,7 @@ export default {
 #title {
   box-sizing: border-box;
   padding: 16px 0px;
-  background-color: var(--primary-dark-color);
+  background-color: var(--secondary-dark-color);
   color: white;
   width: 100%;
   margin-top: 8px;
@@ -203,10 +203,11 @@ export default {
 }
 
 .badge {
-  background-color: var(--secondary-color) !important;
+  background-color: var(--primary-dark-color) !important;
+  color: black !important;
 }
 #inputs input {
-  border: 1px solid var(--secondary-color) !important;
+  border: 1px solid var(--secondary-dark-color) !important;
 }
 
 #inputs input:focus {

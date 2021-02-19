@@ -860,7 +860,7 @@ export default {
 #sidebar .active {
   color: white !important;
 
-  background-color: var(--primary-dark-color);
+  background-color: var(--secondary-dark-color);
 }
 
 .img-projeto {

@@ -203,7 +203,7 @@ export default {
 
   color: white !important;
 
-  background-color: var(--primary-dark-color);
+  background-color: var(--secondary-dark-color);
 }
 
 @media screen and (max-width: 760px) {

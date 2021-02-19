@@ -70,8 +70,8 @@ export default {
 
 .list-group-item:hover {
   cursor: pointer;
-  background: var(--primary-dark-color) !important;
-  border-color: var(--primary-dark-color) !important;
+  background: var(--secondary-dark-color) !important;
+  border-color: var(--secondary-dark-color) !important;
   color: white !important;
 }
 

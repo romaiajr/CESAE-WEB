@@ -242,7 +242,7 @@ export default {
 }
 .dropdown-item:hover {
   color: #fff !important;
-  background-color: var(--primary-dark-color) !important;
+  background-color: var(--secondary-dark-color) !important;
 }
 @media screen and (max-width: 600px) {
   .navbar .btn {

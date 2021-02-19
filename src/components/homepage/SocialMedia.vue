@@ -35,7 +35,7 @@
   box-sizing: border-box;
   width: 100%;
   padding: 12px 0px;
-  background: var(--secondary-light-color);
+  background: var(--primary-light-color);
 }
 #buttons_social {
   display: flex;

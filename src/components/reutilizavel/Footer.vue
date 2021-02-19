@@ -21,7 +21,7 @@
                 id="logo-rodapé-secundaria1"
               />
             </a>
-            <a href="http://proex.uefs.br/" target="_blank">
+            <!--<a href="http://proex.uefs.br/" target="_blank">
               <img
                 src="../../assets/img/proex_logo2.png"
                 alt="logo"
@@ -34,7 +34,7 @@
                 alt="logo"
                 id="logo-rodapé-secundaria1"
               />
-            </a>
+            </a>-->
           </div>
         </div>
         <div
@@ -44,13 +44,13 @@
         ></div>
         <div class="row m-0 justify-content-center" style="padding-top: 8px">
           <h6>
-            NUPEC | NÚCLEO DE ESTUDOS E PESQUISA SOBRE O CUIDAR/CUIDADO
+            CESAE | CUIDADO, EDUCAÇÃO EM SAÚDE E ANÁLISE EXISTENCIAL
           </h6>
           <p>
             Avenida Transnordestina, s/n - Novo Horizonte - CEP 44036-900 -
             Feira de Santana - Bahia
             <br />
-            Telefone: 75 3161-8365 | Email: nupec@uefs.br
+            Telefone: 75 9999-9999 | Email: cesae@uefs.br
           </p>
         </div>
 

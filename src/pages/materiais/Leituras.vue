@@ -176,11 +176,11 @@ export default {
 }
 
 #sidebar .active {
-  border: 1px solid var(--primary-dark-color) !important;
+  border: 1px solid var(--secondary-dark-color) !important;
 
   color: white !important;
 
-  background-color: var(--primary-dark-color);
+  background-color: var(--secondary-dark-color) !important;
 }
 
 @media screen and (max-width: 760px) {
