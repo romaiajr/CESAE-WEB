@@ -1,5 +1,5 @@
-# NUPEC-WEB
-Site desenvolvido para o Núcleo Integrado de Estudos e Pesquisas sobre o Cuidar/Cuidado (NUPEC) da Universidade Estadual de Feira de Santana
+# CESAE-WEB
+Site desenvolvido para o Grupo CESAE da Universidade Estadual de Feira de Santana
 
 ## Project setup
 ```
