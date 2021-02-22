@@ -50,7 +50,7 @@
             Avenida Transnordestina, s/n - Novo Horizonte - CEP 44036-900 -
             Feira de Santana - Bahia
             <br />
-            Telefone: 75 9999-9999 | Email: cesae@uefs.br
+            Telefone: 75 3161-8193 | Email: cesae.site@gmail.com
           </p>
         </div>
 
