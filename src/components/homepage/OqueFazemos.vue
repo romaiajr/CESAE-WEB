@@ -4,7 +4,7 @@
       <div class="row m-0">
         <img src="../../assets/img/box.png" id="box" />
         <div class="col-12 col-md-3">
-          <h2 class="title-section">O QUE <br />FAZEMOS</h2>
+          <h2 class="title-section">NOSSO OBJETIVO</h2>
         </div>
         <div class="col-0 col-md-1"></div>
         <div class="col-12 col-md-8">
@@ -16,13 +16,37 @@
             e as dimensões da produção do cuidado nos campos da clínica, da
             saúde coletiva e da saúde mental, privilegiando o trabalho com
             narrativas autobiográficas. -->
-            O NUPEC desde 2010 desenvolve o projeto de pesquisa "Práticas de
-            cuidado no cotidiano de feirantes em Feira de Santana - BA" e
-            intervenções extensionistas voltados às práticas de cuidado dos
-            feirantes para consigo, com os seus familiares, com os produtos que
-            comercializam e com o seu local de trabalho nos aspectos físicos,
-            ambientais, sanitários e organizacionais, nas principais
-            feiras-livres da cidade, com enfoque na educação em saúde.
+            <ul>
+              <li>
+                Investigar e divulgar a produção do conhecimento sobre a
+                educação na formação em Enfermagem abrangendo as diretrizes
+                curriculares, ética e bioética do compromisso e da
+                responsabilidade profissional, vivências da prática de cuidar em
+                Enfermagem, tecnologias para a sistematização do cuidado
+                fundamentado nas teorias de Enfermagem.
+              </li>
+              <li>
+                Desenvolver atividades de ensino, pesquisa e extensão com
+                fundamentos na pesquisa qualitativa, fenomenologia, logoterapia
+                e Análise Existencial, sobretudo quanto às vivências na
+                academia, cuidado nas instituições hospitalares e unidades e
+                centros de saúde priorizando a educação voltada para ser
+                responsável, o sentido da vida e a tridimensionalidade do ser
+                biológica, psicológica e espiritual.
+              </li>
+              <li>
+                Focar na atenção ao ser humano vulnerável com a situação de
+                adoecimento e possibilitar ao estudante a autocompreensão e a
+                autotransformação nesse contexto pelo encontro de sentido
+                tornando-se agente consciente, comprometido, responsável e
+                crítico na sua formação considerando as condições necessárias
+                para esse processo.
+              </li>
+              <li>
+                Desenvolver projetos de pesquisa e de extensão para obtenção de
+                bolsas de iniciação científica e extensão.
+              </li>
+            </ul>
           </h6>
         </div>
       </div>

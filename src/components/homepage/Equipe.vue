@@ -9,15 +9,11 @@
         <div class="col-0 col-md-1"></div>
         <div class="col-12 col-md-8">
           <h6>
-            <!-- Nossa equipe é formada por Professores e Estudantes do curso de
-            Enfermagem na Universidade Estadual de Feira de Santana, junto a
-            Colaboradores Externos, como feirantes e contribuintes, onde
-            compartilhamos do objetivo de promover o aprofundamento acerca do
-            Cuidar/Cuidado. -->
             Nossa equipe é composta por um grupo multidisciplinar de
             pesquisadoras(es) e estudantes de graduação da Universidade Estadual
             de Feira de Santana, majoritariamente de Enfermagem, visando
-            aprofundar o ensino e a pesquisa acerca do Cuidado.
+            aprofundar o ensino e a pesquisa acerca do Cuidado, Educação em
+            Saúde e Analise Existencial.
           </h6>
         </div>
       </div>
