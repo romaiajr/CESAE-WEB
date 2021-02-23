@@ -776,10 +776,10 @@ export default {
   width: 100% !important;
   font-size: 32px !important;
   text-transform: uppercase !important;
-  color: white !important;
+  color: black !important;
 }
 #modal-info .modal-header {
-  background-color: var(--primary-dark-color);
+  background-color: var(--primary-light-color);
 }
 #modal-info .btn-form {
   background-color: var(--secondary-color);

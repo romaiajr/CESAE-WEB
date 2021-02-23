@@ -837,15 +837,14 @@ export default {
   padding-bottom: 16px;
 }
 
-#modal-extensao .modal-title {
+#modal-info .modal-title {
   width: 100% !important;
   font-size: 32px !important;
   text-transform: uppercase !important;
-  color: white !important;
+  color: black !important;
 }
-
-#modal-extensao .modal-header {
-  background-color: var(--primary-dark-color);
+#modal-info .modal-header {
+  background-color: var(--primary-light-color);
 }
 #modal-extensao .btn-form {
   background-color: var(--secondary-color);
