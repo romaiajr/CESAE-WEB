@@ -14,6 +14,7 @@ import Extensao from "./pages/materiais/Extensao.vue";
 import AtividadesComplementares from "./pages/materiais/AtividadesComplementares.vue";
 import IniciacaoCientifica from "./pages/materiais/IniciacaoCientifica.vue";
 import Leituras from "./pages/materiais/Leituras.vue";
+import Tcc from "./pages/materiais/Tcc.vue";
 
 const router = new Router({
   mode: "history",
@@ -24,6 +25,7 @@ const router = new Router({
       component: Materiais,
     },
     { path: "/producoes/artigos", component: Artigos },
+    { path: "/producoes/trabalhos-de-conclusao-de-curso", component: Tcc },
     { path: "/producoes/livros", component: Livros },
     { path: "/producoes/capitulos-de-livros", component: CapLivro },
     {

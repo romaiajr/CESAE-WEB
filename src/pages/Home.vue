@@ -9,6 +9,9 @@
         <b-dropdown-item to="producoes/projetos-de-extensao" exact
           >Projetos de Extensão</b-dropdown-item
         >
+        <b-dropdown-item to="/producoes/trabalhos-de-conclusao-de-curso" exact
+          >Trabalhos de Conclusão de Curso</b-dropdown-item
+        >
         <b-dropdown-item to="producoes/artigos" exact>
           Artigos
         </b-dropdown-item>

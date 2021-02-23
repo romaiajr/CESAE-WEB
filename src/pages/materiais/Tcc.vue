@@ -7,13 +7,12 @@
       <b-nav-item class="mobile-nav" to="/producoes/projetos-de-extensao" exact
         >Projetos de Extensão</b-nav-item
       >
-      <b-nav-item
-        class="mobile-nav"
-        to="/producoes/trabalhos-de-conclusao-de-curso"
-        exact
+      <b-nav-item class="mobile-nav"
         >Trabalhos de Conclusão de Curso</b-nav-item
       >
-      <b-nav-item class="mobile-nav">Artigos</b-nav-item>
+      <b-nav-item class="mobile-nav" to="producoes/artigos" exact
+        >Artigos</b-nav-item
+      >
       <b-nav-item class="mobile-nav" to="/producoes/livros" exact
         >Livros</b-nav-item
       >
@@ -34,12 +33,12 @@
     <div class="container-fluid p-0">
       <div class="row m-0" id="content">
         <div class="col-md-2 col-0 border-right" id="sidebar">
-          <Sidebar active="3" />
+          <Sidebar active="8" />
         </div>
         <div class="col-md-10 col-12" id="table-section">
           <Management
             :conteudo="items"
-            nome="Artigos"
+            nome="Trabalhos de Conclusão de Curso (TCC)"
             sortBy="Nome"
             :fields="fields"
             @itemRemove="itemRemove"
@@ -51,12 +50,12 @@
 
     <b-modal
       id="modal-1"
-      ref="modal-artigos"
-      title="Adicionar Novo Artigo"
+      ref="modal-tcc"
+      title="Adicionar Novo TCC"
       hide-footer
       @hide="onReset"
       ><b-form @submit.prevent="onSubmit" @reset="onReset">
-        <b-form-text> Título do Artigo </b-form-text>
+        <b-form-text> Título do TCC </b-form-text>
         <b-form-input required v-model="form.titulo"></b-form-input>
         <b-form-text> Nome do(s) Autor(es) </b-form-text>
         <b-form-input required v-model="form.autor"></b-form-input>
@@ -90,7 +89,7 @@ import Navbar from "../../components/reutilizavel/Navbar";
 import Footer from "../../components/reutilizavel/Footer";
 import Management from "../../components/manager/Management";
 import Sidebar from "../../components/manager/Sidebar";
-import artigoService from "../../services/artigoService";
+import tccService from "../../services/tccService";
 
 export default {
   components: {
@@ -105,7 +104,7 @@ export default {
     fields: [
       {
         key: "titulo",
-        label: "Título do Artigo",
+        label: "Título do TCC",
         sortable: true,
         sortDirection: "asc",
       },
@@ -127,7 +126,7 @@ export default {
     items: [],
   }),
   created() {
-    this.getArtigos();
+    this.getTcc();
   },
   methods: {
     async onSubmit() {
@@ -135,29 +134,29 @@ export default {
       this.form.autor.trim();
       this.form.link.trim();
       try {
-        await artigoService.addArtigo(this.form);
+        await tccService.addTcc(this.form);
         this.$vs.notification({
           color: "success",
-          title: "Adicionar Artigo",
-          text: "Artigo adicionado com sucesso!",
+          title: "Adicionar Tcc",
+          text: "Tcc adicionado com sucesso!",
         });
-        this.getArtigos();
-        this.$refs["modal-artigos"].hide();
+        this.getTcc();
+        this.$refs["modal-tcc"].hide();
       } catch (e) {
         this.$vs.notification({
           color: "danger",
-          title: "Adicionar Artigo",
-          text: "Houve um erro ao tentar adicionar o novo artigo",
+          title: "Adicionar Tcc",
+          text: "Houve um erro ao tentar adicionar o novo Tcc",
         });
       }
     },
     onReset() {
       this.form = {};
-      this.$refs["modal-artigos"].hide();
+      this.$refs["modal-tcc"].hide();
     },
-    getArtigos() {
+    getTcc() {
       const loading = this.$vs.loading();
-      artigoService.getArtigos().then((response) => {
+      tccService.getTcc().then((response) => {
         this.items = response.data.sort((a, b) => {
           return a.titulo.localeCompare(b.titulo);
         });
@@ -169,13 +168,13 @@ export default {
     },
     async onDelete() {
       try {
-        await artigoService.removeArtigo(this.deleteId);
+        await tccService.removeTcc(this.deleteId);
         this.$vs.notification({
           color: "success",
-          title: "Remover Artigo",
-          text: "Artigo removido com sucesso!",
+          title: "Remover Tcc",
+          text: "Tcc removido com sucesso!",
         });
-        this.getArtigos();
+        this.getTcc();
         // this.items.slice(
         //   this.items.findIndex((item) => item._id == this.deleteId),
         //   1
@@ -183,8 +182,8 @@ export default {
       } catch (e) {
         this.$vs.notification({
           color: "danger",
-          title: "Remover Artigo",
-          text: "Houve um erro ao tentar remover o artigo",
+          title: "Remover Tcc",
+          text: "Houve um erro ao tentar remover o Tcc",
         });
       }
     },

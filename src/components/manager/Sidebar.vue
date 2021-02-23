@@ -15,6 +15,14 @@
       >Projetos de Extensão</b-list-group-item
     >
     <b-list-group-item
+      to="/producoes/trabalhos-de-conclusao-de-curso"
+      exact
+      :active="active == 8"
+      :disabled="active == 8"
+    >
+      Trabalhos de Conclusão de Curso</b-list-group-item
+    >
+    <b-list-group-item
       to="/producoes/artigos"
       exact
       :active="active == 3"

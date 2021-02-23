@@ -4,7 +4,7 @@
       <div class="row m-0">
         <img src="../../assets/img/box.png" id="box" />
         <div class="col-12 col-md-3">
-          <h2 class="title-section">NOSSO OBJETIVO</h2>
+          <h2 class="title-section">O QUE FAZEMOS</h2>
         </div>
         <div class="col-0 col-md-1"></div>
         <div class="col-12 col-md-8">

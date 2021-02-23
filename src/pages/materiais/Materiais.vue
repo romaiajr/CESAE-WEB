@@ -7,6 +7,12 @@
       <b-nav-item class="mobile-nav" to="/producoes/projetos-de-extensao" exact
         >Projetos de Extensão</b-nav-item
       >
+      <b-nav-item
+        class="mobile-nav"
+        to="/producoes/trabalhos-de-conclusao-de-curso"
+        exact
+        >Trabalhos de Conclusão de Curso</b-nav-item
+      >
       <b-nav-item class="mobile-nav" to="/producoes/artigos" exact
         >Artigos</b-nav-item
       >
@@ -54,6 +60,15 @@
                 icone="fa fa-laptop"
                 cor="color:#dc3546"
                 nome="Projetos de Extensão"
+              >
+              </CardMaterial>
+            </div>
+            <div class="col-md-3 col-sm-4">
+              <CardMaterial
+                link="/producoes/trabalhos-de-conclusao-de-curso"
+                icone="bx bx-book-reader"
+                cor="color:RGB(245, 12, 153)"
+                nome="Trabalhos de Conclusão de Curso"
               >
               </CardMaterial>
             </div>

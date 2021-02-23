@@ -7,6 +7,12 @@
       <b-nav-item class="mobile-nav" to="/producoes/projetos-de-extensao" exact
         >Projetos de Extensão</b-nav-item
       >
+      <b-nav-item
+        class="mobile-nav"
+        to="/producoes/trabalhos-de-conclusao-de-curso"
+        exact
+        >Trabalhos de Conclusão de Curso</b-nav-item
+      >
       <b-nav-item class="mobile-nav" to="/producoes/artigos" exact
         >Artigos</b-nav-item
       >
