@@ -139,9 +139,6 @@ export default {
   },
   data: () => ({
     style: "display: block !important",
-    // style2: "display: block !important",
-    // style3: "display: block !important",
-    // style4: "display: block !important",
   }),
 };
 </script>
@@ -149,9 +146,6 @@ export default {
 .mobile-nav {
   display: none;
 }
-/* #sidebar {
-  padding: 8px 8px 0 8px;
-} */
 
 @media screen and (max-width: 760px) {
   .mobile-nav {

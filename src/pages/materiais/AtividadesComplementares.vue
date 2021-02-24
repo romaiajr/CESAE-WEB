@@ -377,7 +377,7 @@
           Sugestão: Para melhor harmonia entre as fotos, é recomendado que todas
           estejam na mesma proporção. Ex: 10x8, 1x1
         </b-form-text>
-        <b-form-text>Link para Acesso Externo (Não Obrigatório )</b-form-text>
+        <b-form-text>Link para Acesso Externo (Opcional)</b-form-text>
         <b-form-input v-model="formFoto.linkExterno"></b-form-input>
         <div id="button-modal">
           <b-button type="reset" variant="danger">Cancelar</b-button>

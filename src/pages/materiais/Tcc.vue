@@ -43,6 +43,174 @@
             :fields="fields"
             @itemRemove="itemRemove"
           />
+
+          <div
+            class="container"
+            style="padding-top: 8px; border-top: 1px solid #dee2e6 !important; margin-top: 8px"
+          >
+            <h5>Mural de Apresentações de TCC</h5>
+            <div
+              class="row m-0"
+              id="carousel-desktop"
+              style="width:100%;margin:10px auto;height: 450px"
+            >
+              <slider
+                ref="slider-desktop"
+                :options="optionsDesktop"
+                v-if="fotos.length != 0"
+              >
+                <!-- slideritem wrapped package with the components you need -->
+                <slideritem
+                  v-for="(foto, index) in fotos"
+                  :key="index"
+                  :style="styleDesktop"
+                >
+                  <div class="card">
+                    <img
+                      class="card-img-top img-fluid"
+                      :src="foto.imagem"
+                      alt="Card image cap"
+                    />
+                    <div class="card-body">
+                      <p class="card-title text-wrap">
+                        {{ `Apresentação de ${foto.autor} (${foto.ano})` }}
+                        <br />
+                      </p>
+
+                      <div id="action-card">
+                        <b-button
+                          v-show="isLogged"
+                          v-b-modal.modal-remover
+                          @click="removeId(2, foto._id)"
+                          size="sm"
+                          variant="danger"
+                          squared
+                        >
+                          <i class="bx bx-trash"></i>
+                          Excluir</b-button
+                        >
+                      </div>
+                    </div>
+                  </div>
+                </slideritem>
+                <!-- Customizable loading -->
+              </slider>
+              <div v-else style="width: 100% !important;">
+                <b-alert show variant="warning">
+                  <h6>
+                    Ainda não foram inseridas fotos nesta sessão
+                  </h6></b-alert
+                >
+              </div>
+            </div>
+            <div
+              class="row m-0"
+              id="carousel-mobile"
+              style="width:100%;margin:10px auto;height: 500px"
+            >
+              <slider
+                ref="slider-mobile"
+                :options="optionsMobile"
+                v-if="fotos.length != 0"
+              >
+                <!-- slideritem wrapped package with the components you need -->
+                <slideritem
+                  v-for="(foto, index) in fotos"
+                  :key="index"
+                  :style="styleMobile"
+                >
+                  <div class="card">
+                    <img
+                      class="card-img-top img-fluid"
+                      :src="foto.imagem"
+                      alt="Card image cap"
+                    />
+                    <div class="card-body">
+                      <p class="card-title text-wrap">
+                        {{ `Apresentação de ${foto.autor} (${foto.ano})` }}
+                        <br />
+                      </p>
+
+                      <div id="action-card">
+                        <b-button
+                          v-show="isLogged"
+                          v-b-modal.modal-remover
+                          @click="removeId(2, foto._id)"
+                          size="sm"
+                          variant="danger"
+                          squared
+                        >
+                          <i class="bx bx-trash"></i>
+                          Excluir</b-button
+                        >
+                      </div>
+                    </div>
+                  </div>
+                </slideritem>
+                <!-- Customizable loading -->
+              </slider>
+              <div v-else style="width: 100% !important;">
+                <b-alert show variant="warning">
+                  <h6>
+                    Ainda não foram inseridas fotos nesta sessão
+                  </h6></b-alert
+                >
+              </div>
+              <div
+                class="row m-0"
+                id="carousel-medium"
+                style="width:100%;margin:10px auto;height: 450px"
+              >
+                <slider
+                  ref="slider-medium"
+                  :options="optionsMobile"
+                  v-if="fotos.length != 0"
+                >
+                  <!-- slideritem wrapped package with the components you need -->
+                  <slideritem
+                    v-for="(foto, index) in fotos"
+                    :key="index"
+                    :style="styleMedium"
+                  >
+                    <div class="card">
+                      <img
+                        class="card-img-top img-fluid"
+                        :src="foto.imagem"
+                        alt="Card image cap"
+                      />
+                      <div class="card-body">
+                        <p class="card-title text-wrap">
+                          {{ `Apresentação de ${foto.autor} (${foto.ano})` }}
+                          <br />
+                        </p>
+                        <div id="action-card">
+                          <b-button
+                            v-show="isLogged"
+                            v-b-modal.modal-remover
+                            @click="removeId(2, foto._id)"
+                            size="sm"
+                            variant="danger"
+                            squared
+                          >
+                            <i class="bx bx-trash"></i>
+                            Excluir</b-button
+                          >
+                        </div>
+                      </div>
+                    </div>
+                  </slideritem>
+                  <!-- Customizable loading -->
+                </slider>
+                <div slot="loading" v-show="fotos.length == 0">
+                  <b-alert show variant="warning"
+                    ><h6>
+                      Ainda não foram inseridas fotos nesta sessão
+                    </h6></b-alert
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
           <Footer />
         </div>
       </div>
@@ -57,12 +225,17 @@
       ><b-form @submit.prevent="onSubmit" @reset="onReset">
         <b-form-text> Título do TCC </b-form-text>
         <b-form-input required v-model="form.titulo"></b-form-input>
-        <b-form-text> Nome do(s) Autor(es) </b-form-text>
+        <b-form-text> Nome do Autor </b-form-text>
         <b-form-input required v-model="form.autor"></b-form-input>
-        <b-form-text> Link para Acesso </b-form-text>
-        <b-form-input required v-model="form.link"></b-form-input>
+        <b-form-text> Nome do Orientador </b-form-text>
+        <b-form-input required v-model="form.orientador"></b-form-input>
+        <b-form-text> Ano de Conclusão </b-form-text>
+        <b-form-input required v-model="form.ano"></b-form-input>
+        <b-form-text> Link da foto (Opcional)</b-form-text>
+        <b-form-input required v-model="form.imagem"></b-form-input>
         <b-form-text id="password-help-block">
-          O link para acesso deve seguir o exemplo: "http://www.uefs.br/"
+          Sugestão: Para melhor harmonia entre as fotos, é recomendado que todas
+          estejam na mesma proporção. Ex: 10x8, 1x1
         </b-form-text>
         <div id="button-modal">
           <b-button type="reset" variant="danger">Cancelar</b-button>
@@ -90,6 +263,7 @@ import Footer from "../../components/reutilizavel/Footer";
 import Management from "../../components/manager/Management";
 import Sidebar from "../../components/manager/Sidebar";
 import tccService from "../../services/tccService";
+import { slider, slideritem } from "vue-concise-slider";
 
 export default {
   components: {
@@ -97,6 +271,8 @@ export default {
     Footer,
     Management,
     Sidebar,
+    slider,
+    slideritem,
   },
   data: () => ({
     text: "",
@@ -110,20 +286,61 @@ export default {
       },
       {
         key: "autor",
-        label: "Autor(es)",
+        label: "Autor",
         sortable: true,
         sortDirection: "asc",
       },
-      { key: "link", label: "Link" },
+      {
+        key: "orientador",
+        label: "Orientador",
+        sortable: true,
+        sortDirection: "asc",
+      },
+      {
+        key: "ano",
+        label: "Ano de Apresentação",
+        sortable: true,
+        sortDirection: "asc",
+      },
       { key: "remove", label: "" },
     ],
     form: {
       titulo: "",
       autor: "",
-      link: "",
+      orientador: "",
+      ano: "",
+      imagem: "",
     },
-
     items: [],
+    fotos: [],
+    styleDesktop: {
+      height: "auto",
+      width: "31.3%",
+      "margin-right": "2%",
+    },
+    styleMobile: {
+      height: "auto",
+      width: "98%",
+      "margin-right": "2%",
+    },
+    styleMedium: {
+      height: "auto",
+      width: "49%",
+      "margin-right": "2%",
+    },
+    //Slider configuration [obj]
+    optionsDesktop: {
+      currentPage: 0,
+      slidesToScroll: 2,
+      thresholdDistance: "50",
+      pagination: false,
+    },
+    optionsMobile: {
+      currentPage: 0,
+      slidesToScroll: 1,
+      thresholdDistance: "50",
+      pagination: false,
+    },
   }),
   created() {
     this.getTcc();
@@ -132,7 +349,9 @@ export default {
     async onSubmit() {
       this.form.titulo.trim();
       this.form.autor.trim();
-      this.form.link.trim();
+      this.form.orientador.trim();
+      this.form.ano.trim();
+      this.form.imagem.trim();
       try {
         await tccService.addTcc(this.form);
         this.$vs.notification({
@@ -160,6 +379,11 @@ export default {
         this.items = response.data.sort((a, b) => {
           return a.titulo.localeCompare(b.titulo);
         });
+        this.items.map((item) => {
+          if (!item.foto) {
+            this.fotos.push(item);
+          }
+        });
         loading.close();
       });
     },
@@ -174,6 +398,7 @@ export default {
           title: "Remover Tcc",
           text: "Tcc removido com sucesso!",
         });
+        this.fotos = [];
         this.getTcc();
         // this.items.slice(
         //   this.items.findIndex((item) => item._id == this.deleteId),

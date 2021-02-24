@@ -287,7 +287,7 @@
         ></b-form-radio-group>
         <b-form-text> Cargo Exercido</b-form-text>
         <b-form-input required v-model="form.cargo"></b-form-input>
-        <b-form-text> Link para o Lattes (Não obrigatório) </b-form-text>
+        <b-form-text> Link para o Lattes (Opcional) </b-form-text>
         <b-form-input v-model="form.lattes"></b-form-input>
         <b-form-text> Link para Imagem </b-form-text>
         <b-form-input required v-model="form.imagem"></b-form-input>
