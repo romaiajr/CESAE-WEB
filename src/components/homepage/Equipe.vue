@@ -11,9 +11,9 @@
           <h6>
             Nossa equipe é composta por um grupo multidisciplinar de
             pesquisadoras(es) e estudantes de graduação da Universidade Estadual
-            de Feira de Santana, majoritariamente de Enfermagem, visando
-            aprofundar o ensino e a pesquisa acerca do Cuidado, Educação em
-            Saúde e Analise Existencial.
+            de Feira de Santana, majoritariamente de Enfermagem e de cuidado do
+            ser humano, visando aprofundar o ensino e a pesquisa acerca do
+            Cuidado, Educação em Saúde e Analise Existencial.
           </h6>
         </div>
       </div>
@@ -95,7 +95,7 @@
         </slider>
         <div
           v-show="equipe.length == 0 && loading > 0"
-          style="width: 100% !important;"
+          style="width: 100% !important; "
         >
           <b-alert show variant="warning">
             <h6>
@@ -157,99 +157,111 @@
           <template #header>
             <h5 class="not-margin">Nossa Equipe</h5>
           </template>
-          <div class="row m-0">
-            <h4>Professoras(es)</h4>
-          </div>
-          <div class="row">
-            <div
-              class="col-6 col-md-4"
-              v-for="membro in equipe"
-              v-show="membro.tipo == options[0]"
-              :key="membro._id"
+          <div
+            v-show="equipe.length == 0 && loading > 0"
+            style="width: 100% !important;"
+          >
+            <b-alert show variant="warning">
+              <h6>
+                Ainda não foram inseridas fotos nesta sessão
+              </h6></b-alert
             >
-              <CardEquipe
-                class="card-toda-equipe"
-                :imagem="membro.imagem"
-                :nome="membro.nome"
-                :cargo="membro.cargo"
-                :lattes="membro.lattes"
-              />
+          </div>
+          <div v-show="equipe.length != 0">
+            <div class="row m-0">
+              <h4>Professoras(es)</h4>
             </div>
-          </div>
-          <div class="row m-0" style="margin-top: 36px !important;">
-            <h4>Bolsistas</h4>
-          </div>
-          <div class="row">
-            <div
-              class="col-6 col-md-4"
-              v-for="membro in equipe"
-              v-show="membro.tipo == options[1]"
-              :key="membro._id"
-            >
-              <CardEquipe
-                class="card-toda-equipe"
-                :imagem="membro.imagem"
-                :nome="membro.nome"
-                :cargo="membro.cargo"
-                :lattes="membro.lattes"
-              />
+            <div class="row">
+              <div
+                class="col-6 col-md-4"
+                v-for="membro in equipe"
+                v-show="membro.tipo == options[0]"
+                :key="membro._id"
+              >
+                <CardEquipe
+                  class="card-toda-equipe"
+                  :imagem="membro.imagem"
+                  :nome="membro.nome"
+                  :cargo="membro.cargo"
+                  :lattes="membro.lattes"
+                />
+              </div>
             </div>
-          </div>
-          <div class="row m-0" style="margin-top: 36px !important;">
-            <h4>Voluntários(as)</h4>
-          </div>
-          <div class="row">
-            <div
-              class="col-6 col-md-4"
-              v-for="membro in equipe"
-              v-show="membro.tipo == options[2]"
-              :key="membro._id"
-            >
-              <CardEquipe
-                class="card-toda-equipe"
-                :imagem="membro.imagem"
-                :nome="membro.nome"
-                :cargo="membro.cargo"
-                :lattes="membro.lattes"
-              />
+            <div class="row m-0" style="margin-top: 36px !important;">
+              <h4>Bolsistas</h4>
             </div>
-          </div>
-          <div class="row m-0" style="margin-top: 36px !important;">
-            <h4>Colaboradores(as)</h4>
-          </div>
-          <div class="row">
-            <div
-              class="col-6 col-md-4"
-              v-for="membro in equipe"
-              v-show="membro.tipo == options[3]"
-              :key="membro._id"
-            >
-              <CardEquipe
-                class="card-toda-equipe"
-                :imagem="membro.imagem"
-                :nome="membro.nome"
-                :cargo="membro.cargo"
-                :lattes="membro.lattes"
-              />
+            <div class="row">
+              <div
+                class="col-6 col-md-4"
+                v-for="membro in equipe"
+                v-show="membro.tipo == options[1]"
+                :key="membro._id"
+              >
+                <CardEquipe
+                  class="card-toda-equipe"
+                  :imagem="membro.imagem"
+                  :nome="membro.nome"
+                  :cargo="membro.cargo"
+                  :lattes="membro.lattes"
+                />
+              </div>
             </div>
-          </div>
-          <div class="row m-0" style="margin-top: 36px !important;">
-            <h4>Ex-membros</h4>
-          </div>
-          <div class="row">
-            <div
-              class="col-6 col-md-4"
-              v-for="membro in equipe"
-              v-show="membro.tipo == options[4]"
-              :key="membro._id"
-            >
-              <CardEquipe
-                class="card-toda-equipe"
-                :imagem="membro.imagem"
-                :nome="membro.nome"
-                :cargo="membro.cargo"
-                :lattes="membro.lattes"
-              />
+            <div class="row m-0" style="margin-top: 36px !important;">
+              <h4>Voluntários(as)</h4>
+            </div>
+            <div class="row">
+              <div
+                class="col-6 col-md-4"
+                v-for="membro in equipe"
+                v-show="membro.tipo == options[2]"
+                :key="membro._id"
+              >
+                <CardEquipe
+                  class="card-toda-equipe"
+                  :imagem="membro.imagem"
+                  :nome="membro.nome"
+                  :cargo="membro.cargo"
+                  :lattes="membro.lattes"
+                />
+              </div>
+            </div>
+            <div class="row m-0" style="margin-top: 36px !important;">
+              <h4>Colaboradores(as)</h4>
+            </div>
+            <div class="row">
+              <div
+                class="col-6 col-md-4"
+                v-for="membro in equipe"
+                v-show="membro.tipo == options[3]"
+                :key="membro._id"
+              >
+                <CardEquipe
+                  class="card-toda-equipe"
+                  :imagem="membro.imagem"
+                  :nome="membro.nome"
+                  :cargo="membro.cargo"
+                  :lattes="membro.lattes"
+                />
+              </div>
+            </div>
+            <div class="row m-0" style="margin-top: 36px !important;">
+              <h4>Ex-membros</h4>
+            </div>
+            <div class="row">
+              <div
+                class="col-6 col-md-4"
+                v-for="membro in equipe"
+                v-show="membro.tipo == options[4]"
+                :key="membro._id"
+              >
+                <CardEquipe
+                  class="card-toda-equipe"
+                  :imagem="membro.imagem"
+                  :nome="membro.nome"
+                  :cargo="membro.cargo"
+                  :lattes="membro.lattes"
+                />
+              </div>
             </div>
           </div>
         </vs-dialog>

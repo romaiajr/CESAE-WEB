@@ -4,53 +4,22 @@
       <div class="row m-0">
         <img src="../../assets/img/box.png" id="box" />
         <div class="col-12 col-md-3">
-          <h2 class="title-section">O QUE FAZEMOS</h2>
+          <!-- <h2 class="title-section">O QUE BUSCAMOS</h2> -->
+          <h2 class="title-section">NOSSO OBJETIVO</h2>
         </div>
         <div class="col-0 col-md-1"></div>
         <div class="col-12 col-md-8">
           <h6>
-            <!-- O NUPEC trabalha com estudos e intervenções que tem como eixos a
-            promoção da saúde, proteção específica, reabilitação e cura, com
-            enfoque no adoecimento agudo e crônico no contexto individual,
-            familiar e de grupos, tendo como recorte os itinerários terapêuticos
-            e as dimensões da produção do cuidado nos campos da clínica, da
-            saúde coletiva e da saúde mental, privilegiando o trabalho com
-            narrativas autobiográficas. -->
-            <ul>
-              <li>
-                Investigar e divulgar a produção do conhecimento sobre a
-                educação na formação em Enfermagem abrangendo as diretrizes
-                curriculares, ética e bioética do compromisso e da
-                responsabilidade profissional, vivências da prática de cuidar em
-                Enfermagem, tecnologias para a sistematização do cuidado
-                fundamentado nas teorias de Enfermagem.
-              </li>
-              <li>
-                Desenvolver atividades de ensino, pesquisa e extensão com
-                fundamentos na pesquisa qualitativa, fenomenologia, logoterapia
-                e Análise Existencial, sobretudo quanto às vivências na
-                academia, cuidado nas instituições hospitalares e unidades e
-                centros de saúde priorizando a educação voltada para ser
-                responsável, o sentido da vida e a tridimensionalidade do ser
-                biológica, psicológica e espiritual.
-              </li>
-              <li>
-                Focar na atenção ao ser humano vulnerável com a situação de
-                adoecimento e possibilitar ao estudante a autocompreensão e a
-                autotransformação nesse contexto pelo encontro de sentido
-                tornando-se agente consciente, comprometido, responsável e
-                crítico na sua formação considerando as condições necessárias
-                para esse processo.
-              </li>
-              <li>
-                Desenvolver projetos de pesquisa e de extensão para obtenção de
-                bolsas de iniciação científica e extensão.
-              </li>
-            </ul>
+            O CESAE tem como objetivo desenvolver atividades de ensino, pesquisa
+            e extensão com fundamentos na pesquisa qualitativa, fenomenologia,
+            logoterapia e Análise Existencial na educação e na atenção ao ser
+            humano vulnerável com a situação de adoecimento, através de
+            atividades em salas de aula, laboratórios e campos de práticas dos
+            estudantes de enfermagem e de cuidado do ser humano.
           </h6>
         </div>
       </div>
-      <div class="row m-0" id="card-container">
+      <!-- <div class="row m-0" id="card-container">
         <div class="col-md-3 col-sm-4">
           <CardMaterial
             link="/producoes/iniciacao-cientifica"
@@ -87,7 +56,7 @@
           >
           </CardMaterial>
         </div>
-      </div>
+      </div> -->
       <div id="button-section">
         <router-link to="/producoes" exact>
           <button class="a-button">
@@ -99,9 +68,9 @@
   </div>
 </template>
 <script>
-import CardMaterial from "../reutilizavel/CardMaterial";
+// import CardMaterial from "../reutilizavel/CardMaterial";
 export default {
-  components: { CardMaterial: CardMaterial },
+  // components: { CardMaterial: CardMaterial },
 };
 </script>
 <style>
