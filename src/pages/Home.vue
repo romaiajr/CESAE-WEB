@@ -98,6 +98,9 @@ h5 {
   h2 {
     font-size: 32px !important;
   }
+  h4 {
+    font-size: 24px !important;
+  }
   h5 {
     font-size: 16px !important;
     line-height: 150% !important;
@@ -120,6 +123,9 @@ h5 {
   }
   h2 {
     font-size: 45px !important;
+  }
+  h4 {
+    font-size: 32px !important;
   }
   h5 {
     font-size: 20px !important;
