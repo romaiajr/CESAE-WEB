@@ -380,7 +380,8 @@ export default {
           return a.titulo.localeCompare(b.titulo);
         });
         this.items.map((item) => {
-          if (!item.foto) {
+          console.log(item.foto);
+          if (item.foto != undefined) {
             this.fotos.push(item);
           }
         });
