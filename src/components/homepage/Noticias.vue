@@ -3,7 +3,7 @@
     <div class="container">
       <div class="row m-0">
         <img src="../../assets/img/box.png" id="box" />
-        <div class="col-6 col-md-3">
+        <div class="col-12 col-md-3">
           <h2 class="title-section">MURAL CESAE</h2>
           <div id="buttons-equipe" v-show="isLogged">
             <b-button size="sm" class="btn-form" v-b-modal.modal-addNoticia
