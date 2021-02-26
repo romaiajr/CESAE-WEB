@@ -14,8 +14,8 @@
             >
           </div>
         </div>
-        <div class="col-0 col-md-2" />
-        <div class="col-12 col-md-7">
+        <div class="col-0 col-md-3" />
+        <div class="col-12 col-md-6">
           <b-carousel
             id="carousel-1"
             :interval="5000"
@@ -43,10 +43,10 @@
       @hide="resetForm"
       hide-footer
       ><b-form @submit.prevent="onSubmit" @reset="resetForm">
-        <b-form-text> Título da Notícia </b-form-text>
-        <b-form-input required v-model="form.titulo"></b-form-input>
-        <b-form-text> Descrição da Notícia </b-form-text>
-        <b-form-input required v-model="form.texto"></b-form-input>
+        <b-form-text> Título da Notícia (Opcional)</b-form-text>
+        <b-form-input v-model="form.titulo"></b-form-input>
+        <b-form-text> Descrição da Notícia (Opcional) </b-form-text>
+        <b-form-input v-model="form.texto"></b-form-input>
         <b-form-text> Link para Imagem </b-form-text>
         <b-form-input required v-model="form.link"></b-form-input>
         <div id="button-modal">
