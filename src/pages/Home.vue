@@ -33,6 +33,7 @@
     >
     <div class="content-home">
       <Hero />
+      <div ref="noticias"><Noticias /></div>
       <div ref="quem-somos">
         <QuemSomos />
       </div>
@@ -55,6 +56,7 @@
 <script>
 import Navbar from "../components/reutilizavel/Navbar";
 import Hero from "../components/homepage/Hero";
+import Noticias from "../components/homepage/Noticias";
 import QuemSomos from "../components/homepage/QuemSomos";
 import OqueFazemos from "../components/homepage/OqueFazemos";
 import Equipe from "../components/homepage/Equipe";
@@ -64,6 +66,7 @@ export default {
   components: {
     Navbar,
     Hero,
+    Noticias,
     QuemSomos,
     OqueFazemos,
     Equipe,

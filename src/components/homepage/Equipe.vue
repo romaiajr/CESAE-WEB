@@ -58,7 +58,7 @@
           v-show="equipe.length == 0 && loading > 0"
           style="width: 100% !important;"
         >
-          <b-alert show variant="warning">
+          <b-alert show variant="warning" style="margin-top: 24px !important">
             <h6>
               Ainda não foram inseridas fotos nesta sessão
             </h6></b-alert
@@ -95,7 +95,7 @@
         </slider>
         <div
           v-show="equipe.length == 0 && loading > 0"
-          style="width: 100% !important; "
+          style="width: 100% !important; margin-top: 72px !important "
         >
           <b-alert show variant="warning">
             <h6>
@@ -135,7 +135,7 @@
         </slider>
         <div
           v-show="equipe.length == 0 && loading > 0"
-          style="width: 100% !important;"
+          style="width: 100% !important; margin-top: 88px !important "
         >
           <b-alert show variant="warning">
             <h6>
