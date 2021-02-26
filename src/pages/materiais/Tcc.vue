@@ -232,7 +232,7 @@
         <b-form-text> Ano de Conclusão </b-form-text>
         <b-form-input required v-model="form.ano"></b-form-input>
         <b-form-text> Link da foto (Opcional)</b-form-text>
-        <b-form-input required v-model="form.imagem"></b-form-input>
+        <b-form-input v-model="form.imagem"></b-form-input>
         <b-form-text id="password-help-block">
           Sugestão: Para melhor harmonia entre as fotos, é recomendado que todas
           estejam na mesma proporção. Ex: 10x8, 1x1
