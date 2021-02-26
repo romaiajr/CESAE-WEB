@@ -1,7 +1,7 @@
 <template>
   <div>
     <Navbar>
-      <b-nav-item @click="scrollMeTo('quem-somos')">Quem Somos</b-nav-item>
+      <b-nav-item @click="scrollMeTo('quem-somos')">Grupo CESAE</b-nav-item>
       <b-nav-item-dropdown text="Produções" right id="item-dropdown">
         <b-dropdown-item to="producoes/iniciacao-cientifica" exact
           >Iniciação Científica</b-dropdown-item

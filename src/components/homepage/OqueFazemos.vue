@@ -60,7 +60,7 @@
       <div id="button-section">
         <router-link to="/producoes" exact>
           <button class="a-button">
-            <h6>VEJA TODO CONTEÚDO PRODUZIDO</h6>
+            <h6>VEJA O CONTEÚDO PRODUZIDO</h6>
           </button>
         </router-link>
       </div>
