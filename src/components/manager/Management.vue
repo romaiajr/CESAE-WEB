@@ -87,9 +87,6 @@
 </template>
 <script>
 export default {
-  created() {
-    this.isLogged = JSON.parse(sessionStorage.getItem("isLogged"));
-  },
   props: {
     conteudo: {
       type: Array,
@@ -112,6 +109,9 @@ export default {
     isLogged: false,
     removeId: "",
   }),
+  created() {
+    this.isLogged = JSON.parse(sessionStorage.getItem("isLogged"));
+  },
   computed: {
     filteredList() {
       if (this.text != "") {
