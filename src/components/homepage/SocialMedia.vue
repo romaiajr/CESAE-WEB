@@ -5,7 +5,7 @@
         <vs-button
           icon
           color="facebook"
-          href="https://www.facebook.com/profile.php?id=100018617562787"
+          href="https://m.facebook.com/CFQAE/?ref=bookmarks"
           blank
         >
           <i class="bx bxl-facebook-square"></i>
