@@ -548,7 +548,7 @@ export default {
     },
     async addFoto() {
       this.formFoto.link.trim();
-      this.formFoto.legenda.trim();
+      if (this.formFoto.legenda) this.formFoto.legenda.trim();
       try {
         await atividadeService.addFoto(this.formFoto);
         this.$vs.notification({
@@ -751,7 +751,7 @@ export default {
 
 .event-title {
   width: 100%;
-  /* background: var(--primary-light-color); */
+  background: var(--primary-light-color);
   padding: 8px 16px;
 }
 
