@@ -627,7 +627,6 @@ export default {
       this.formFoto = {};
       this.deleteid = "";
       this.tipo = "";
-      this.selected_atividade = "";
       this.$refs["modal-add-atividade"].hide();
       this.$refs["modal-add-evento"].hide();
       this.$refs["modal-add-foto"].hide();
