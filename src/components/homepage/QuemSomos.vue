@@ -67,6 +67,28 @@
             2014).
             <br /><br />
           </p>
+          <h5 class="cesae-section">
+            Viktor Frankl e a Análise Existencial
+          </h5>
+          <p>
+            Viktor Emil Frankl (1905-1997) nasceu em Viena, na Áustria, médico
+            psiquiatra e criou Logoterapia” ou “Análise Existencial”, e suas
+            ideias ficaram conhecidas como integrantes da “Terceira Escola
+            Vienense de Psicoterapia”. Desde jovem, expressava-se insatisfeito
+            com a hermenêutica da compreensão do “sentido” das escolas
+            anteriores, como a da “Primeira Escola Vienense de Psicoterapia” e a
+            “Segunda Escola Vienense de Psicoterapia”, fundadas por Sigmund
+            Freud (1856-1939) e Alfred Adler (1870-1937), respectivamente
+            (FRANKL, 2013).<br /><br />A "Análise Existencial" trata-se de uma
+            filosofia e um método com pressupostos na fenomenologia "que se
+            preocupa em produzir ciência a partir do resgate do sentido do fazer
+            humano na sua essência. Daí a contribuição para a prática da
+            enfermeira, que lida com o ser no mundo, o ser cuidado. Se, na
+            enfermagem, a tarefa é a de cuidar, precisamos compreender o ser que
+            recebe os cuidados. E a fenomenologia é um convite para adentrar na
+            maneira própria do ser-com, para proporcionar o cuidado" (LIMA,
+            2016).
+          </p>
 
           <h5 class="cesae-section">
             O Que Buscamos?
