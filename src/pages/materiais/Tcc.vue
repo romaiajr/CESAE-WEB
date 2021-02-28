@@ -298,7 +298,7 @@ export default {
       },
       {
         key: "ano",
-        label: "Ano de Apresentação",
+        label: "Ano",
         sortable: true,
         sortDirection: "asc",
       },
@@ -380,8 +380,8 @@ export default {
           return a.titulo.localeCompare(b.titulo);
         });
         this.items.map((item) => {
-          console.log(item.foto);
-          if (item.foto != undefined) {
+          console.log(item.imagem);
+          if (item.imagem != undefined) {
             this.fotos.push(item);
           }
         });
