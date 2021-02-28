@@ -369,8 +369,8 @@
             >{{ evento.titulo }}</b-form-select-option
           ></b-form-select
         >
-        <b-form-text>Legenda da Foto </b-form-text>
-        <b-form-input required v-model="formFoto.legenda"></b-form-input>
+        <b-form-text>Legenda da Foto (Opcional) </b-form-text>
+        <b-form-input v-model="formFoto.legenda"></b-form-input>
         <b-form-text>Link da Foto </b-form-text>
         <b-form-input required v-model="formFoto.link"></b-form-input>
         <b-form-text id="password-help-block">
