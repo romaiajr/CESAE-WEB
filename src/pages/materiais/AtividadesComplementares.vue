@@ -663,6 +663,13 @@ export default {
 };
 </script>
 <style>
+.img-projeto {
+  border: solid #f1f1f1;
+  border-width: thin;
+  width: 100% !important;
+  height: auto !important;
+}
+
 .card {
   margin: 5% 0% !important;
 }

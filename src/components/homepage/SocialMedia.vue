@@ -10,18 +10,13 @@
         >
           <i class="bx bxl-facebook-square"></i>
         </vs-button>
-        <vs-button
-          icon
-          href="https://www.youtube.com/channel/UCXw_d0NO8M11GlB1-tEFgtQ"
-          blank
-          color="youtube"
-        >
+        <vs-button icon href="/" blank color="youtube">
           <i class="bx bxl-youtube"></i>
         </vs-button>
         <vs-button
           icon
           color="slack"
-          href="https://instagram.com/nupecuefs2?igshid=7lzcp6tihac9"
+          href="https://instagram.com/cesaegrupodeestudos?igshid=w67glpz6247p"
           blank
         >
           <i class="bx bxl-instagram"></i>
