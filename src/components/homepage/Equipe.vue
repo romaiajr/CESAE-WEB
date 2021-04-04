@@ -13,7 +13,7 @@
             pesquisadoras(es) e estudantes de graduação da Universidade Estadual
             de Feira de Santana, majoritariamente de Enfermagem e de cuidado do
             ser humano, visando aprofundar o ensino e a pesquisa acerca do
-            Cuidado, Educação em Saúde e Analise Existencial.
+            Cuidado, Educação em Saúde e Análise Existencial.
           </h6>
         </div>
       </div>
